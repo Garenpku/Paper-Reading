@@ -1,10 +1,15 @@
 Topic can be viewed as a abstract representation associated with words, sentences and documents. It is regarded by most as a latent variable, and in those models, words are generated conditioning on that latent variable. Some higher-level parameters control the chosen of topics of a sentence or document, which are the object of the optimization process.
 
+# Definition of topic and topic models
+
 In mainstream work, a topic is not explicitly given by a pre-defined set. Rather it is understood by the whole vocabulary. Formally, a topic *k* is a vector $t^k$ over the vocabulary *V*. The i-th element $t_i^k$ corresbonds to the i-th word in *V*. As you can see, the meaning of a topic is portraited by the words it prefers. With well-chosen parameters, the topics are expected to be distinct, meaningful and coherent.
 
 The most famous probabilistic topic model is given by [Jordan et. al.(2003)](http://www.jmlr.org/papers/v3/blei03a.html), namely **Latent Dirichlet Allocation**. It is a generative model. Two sets of parameters $\alpha$ and $\beta$ are defined to initialize the whole generation process. For each document indexed as *t*, the "topic ground" $\theta_t$ is sampled from *Dirichlet($\alpha$)*. The length *N* is sample from $Poisson(\epsilon)$. Then for word $w_{1, 2,..., N}$, we first choose a topic *t* from $Multinomial(\theta_t)$, then sample $w_i$ from the given distribution $p(w|t, \beta)$.
 
-What can we do with such a latent-variable probablistic model? A most salient usage is **inference**. For each document *d* we can assign it a topic label sequence **z** with the formula $z = argmax_t\ p(z|d, \alpha, \beta) = argmax_t\ \int p(\theta, z|d, \alpha, \beta)d\theta = argmax_t \int \frac{\theta, z, d|\alpha, \beta}{d|\alpha, \beta}$. 
-# topic generation
+What can we do with such a latent-variable probablistic model? A most salient usage is **inference**. For each document *d* we can assign it a topic label sequence **z** with the formula $z = argmax_t\ p(z|d, \alpha, \beta) = argmax_t\ \int p(\theta, z|d, \alpha, \beta)d\theta = argmax_t \int \frac{p(\theta, z, d|\alpha, \beta)}{p(d|\alpha, \beta)}d\theta$. However the term $p(d|\alpha, \beta)$ is intractable because we need to sum over **z** and integral over **\theta**. Here we need to use another distribution $p(\theta, z|\phi, \gamma)$ to approximate the original distribution with new set of parameters **\phi, \gamma**, which is called **variational inference**. For variational inference, I'll write another article to talk about it. Anyway, by using simpler probabilistic models, the inference process becomes tractable.
 
-# topic detection
+There are also variants of such a probabilistic topic model. [Zhao et. al.(2011)](https://ink.library.smu.edu.sg/cgi/viewcontent.cgi?article=2374&context=sis_research) designed another model specially for tweeter, assigning a topic to each tweet, also concerning about the users.
+
+# Topic-guided NLG system
+
+Following the work of [Zhao et. al.(2011)](https://ink.library.smu.edu.sg/cgi/viewcontent.cgi?article=2374&context=sis_research), [Xing et. al.(2017)] comes up with a NLG system that utilizes the topic information.
