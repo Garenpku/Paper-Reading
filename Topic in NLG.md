@@ -4,7 +4,7 @@ In mainstream work, a topic is not explicitly given by a pre-defined set. Rather
 
 The most famous probabilistic topic model is given by [Jordan et. al.(2003)](http://www.jmlr.org/papers/v3/blei03a.html), namely **Latent Dirichlet Allocation**. It is a generative model. Two sets of parameters $\alpha$ and $\beta$ are defined to initialize the whole generation process. For each document indexed as *t*, the "topic ground" $\theta_t$ is sampled from *Dirichlet($\alpha$)*. The length *N* is sample from $Poisson(\epsilon)$. Then for word $w_{1, 2,..., N}$, we first choose a topic *t* from $Multinomial(\theta_t)$, then sample $w_i$ from the given distribution $p(w|t, \beta)$.
 
-What can we do with such a latent-variable probablistic model? A most salient usage is **inference**. For each document *d* we can assign it a topic label sequence **z** with the formula $z = argmax_t\ p(z|d, \alpha, \beta) = argmax_t\ \int p(\theta, z|d, \alpha, \beta)d\theta$
+What can we do with such a latent-variable probablistic model? A most salient usage is **inference**. For each document *d* we can assign it a topic label sequence **z** with the formula $z = argmax_t\ p(z|d, \alpha, \beta) = argmax_t\ \int p(\theta, z|d, \alpha, \beta)d\theta = argmax_t \int \frac{\theta, z, d|\alpha, \beta}{d|\alpha, \beta}$. 
 # topic generation
 
 # topic detection
