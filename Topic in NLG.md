@@ -16,4 +16,5 @@ Following the work of [Zhao et. al.(2011)](https://ink.library.smu.edu.sg/cgi/vi
 
 Intuitively, when generating a response in a context, we want to generate meaningful and coherent sentences. To incorporate the topic mentioned above seems to benefit both requirements. Firstly, with topics, the machine could mostly understand how the conversation is going on, which in some ways ensures the coherence. Secondly, each topic is associated with many words it prefers, which are from out-of-document resource. Introducing the topic model could import many related content words unseen in the context.
 
-During decoding, the model carries out two attentions, one over context messages, and the other one over key words associated with the topic of the given sentence. Formally, for the context *c*, it uses an LDA-variant mentioned above to label its topic *t*, then select highest N words in *t* to form the **topic words** $\{k\}_{i=1}^N$.
+Formally, for each context message, it uses an LDA-variant mentioned above to label its topic *t*, then select highest N words in *t* to form the **topic words** $\{k\}_{i=1}^N$. During decoding, the model carries out two attentions, one over context messages, and the other one over key words associated with the topic of the given sentence. 
+
