@@ -3,6 +3,8 @@ Topic can be viewed as a abstract representation associated with words, sentence
 In mainstream work, a topic is not explicitly given by a pre-defined set. Rather it is understood by the whole vocabulary. Formally, a topic *k* is a vector $t^k$ over the vocabulary *V*. The i-th element $t_i^k$ corresbonds to the i-th word in *V*. As you can see, the meaning of a topic is portraited by the words it prefers. With well-chosen parameters, the topics are expected to be distinct, meaningful and coherent.
 
 The most famous probabilistic topic model is given by [Jordan et. al.(2003)](http://www.jmlr.org/papers/v3/blei03a.html), namely **Latent Dirichlet Allocation**. It is a generative model. Two sets of parameters $\alpha$ and $\beta$ are defined to initialize the whole generation process. For each document indexed as *t*, the "topic ground" $\theta_t$ is sampled from *Dirichlet($\alpha$)*. The length *N* is sample from $Poisson(\epsilon)$. Then for word $w_{1, 2,..., N}$, we first choose a topic *t* from $Multinomial(\theta_t)$, then sample $w_i$ from the given distribution $p(w|t, \beta)$.
+
+What can we do with such a latent-variable probablistic model? A most salient usage is **inference**. For each document *d* we can assign it a topic label sequence $**t**_d$ with the formula $t_d = argmax_t\ p(t|d, \alpha, \beta)$
 # topic generation
 
 # topic detection
