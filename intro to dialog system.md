@@ -9,3 +9,6 @@ Later systems even are designed to have a state of mind such as fear and angry. 
 
 ## IR-based Systems
 Another way to make response to an utterance is to directly retrieve a existing sentence in a corpus. In such a system, a similarity function is designed, and each response is selected according to the similarity score. In general, two methods could be used: choosing the sentence with the highest score and choosing the response to the sentence with the highest score. However, according to Jurafsky, the former seems to be better, which may be due to the inefficiency of the similarity measurement (feature representation included).
+
+## Sequence-to-Sequence Systems
+The similarity of **machine** slation and Response Gneration has been long 
