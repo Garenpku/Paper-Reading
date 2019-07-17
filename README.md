@@ -3,11 +3,11 @@ This repository tries to give a comprehensive field search about dialog systems.
 # Open-domain Dialog Agents
 
 # Domain-specific Dialog Agents
-[Neural Belief Tracker](https://github.com/Garenpku/Paper-Reading/blob/master/Neural%20Belief%20Tracker.pdf)
 
 ## Natural Language Understanding
 
 ## Dialog State Tracker
+[Neural Belief Tracker](https://github.com/Garenpku/Paper-Reading/blob/master/Neural%20Belief%20Tracker.pdf)
 
 
 # Datasets
