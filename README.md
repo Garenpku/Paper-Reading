@@ -5,8 +5,13 @@ This repository tries to give a comprehensive field search about dialog systems.
 # Domain-specific Dialog Agents
 
 ## Natural Language Understanding
+This part takes the hypotheses as input and map them to semantic annotations. The semantic types to be predicted are oriented to the pre-defined ontology. In my understanding, semantic parsing and semantic role labeling can both be variants of the NLU task.
 
 ## Dialog State Tracker
+This part takes annotated utterance from NLU module as input and generate several probability distributions:
+1.**Goals**. For every slot the module should give a probability distribution over all possible values.
+2.**Requested slots**. A reported probability for each requestable slot that has been requested by the user.
+
 [Neural Belief Tracker](https://github.com/Garenpku/Paper-Reading/blob/master/Neural%20Belief%20Tracker.pdf)
 
 
