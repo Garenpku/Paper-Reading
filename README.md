@@ -18,6 +18,7 @@ Sometimes people combine this module and NLU together to map ASR hypotheses dire
 
 [Neural Belief Tracker](https://github.com/Garenpku/Paper-Reading/blob/master/Neural%20Belief%20Tracker.pdf)
 
+[Word-Based Dialog State Tracker with RNN](https://github.com/Garenpku/Paper-Reading/blob/master/Word-Based%20DST%20with%20RNN.pdf)
 
 # Datasets
 
