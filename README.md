@@ -25,6 +25,8 @@ This module takes the raw sentence, dialog state and the policy made by the syst
 
 [Semantically Conditioned LSTM for NLG](https://github.com/Garenpku/Paper-Reading/blob/master/Semantically%20Conditioned%20LSTM%20for%20NLG.pdf)
 
+[Template-Based NLG](https://github.com/Garenpku/Paper-Reading/blob/master/Template-Based%20NLG.pdf)
+
 # Datasets
 
 [Ubuntu Dialog Corpus](https://arxiv.org/abs/1506.08909)  This corpus is collected from Ubuntu chat logs. Its topics are mostly about computer technology issues, which contains lots of terms, parameters and domain-specific actions. Alhough UDC contains massive data, it is a highly noisy dataset. Several papers using this dataset utilized a handcrafted term set and action set, to cope with the property of domain-specific.
