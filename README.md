@@ -20,6 +20,9 @@ Sometimes people combine this module and NLU together to map ASR hypotheses dire
 
 [Word-Based Dialog State Tracker with RNN](https://github.com/Garenpku/Paper-Reading/blob/master/Word-Based%20DST%20with%20RNN.pdf)
 
+## Natural Language Generator
+This module takes the raw sentence, dialog state and the policy made by the system as input and generates a natural language sentence. Generally speaking rule-based, template-based and neural-based mothods are used in this module.
+
 # Datasets
 
 [Ubuntu Dialog Corpus](https://arxiv.org/abs/1506.08909)  This corpus is collected from Ubuntu chat logs. Its topics are mostly about computer technology issues, which contains lots of terms, parameters and domain-specific actions. Alhough UDC contains massive data, it is a highly noisy dataset. Several papers using this dataset utilized a handcrafted term set and action set, to cope with the property of domain-specific.
