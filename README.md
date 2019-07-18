@@ -22,6 +22,9 @@ Sometimes people combine this module and NLU together to map ASR hypotheses dire
 
 [Word-Based Dialog State Tracker with RNN](https://github.com/Garenpku/Paper-Reading/blob/master/Word-Based%20DST%20with%20RNN.pdf)
 
+## Policy Maker
+
+
 ## Natural Language Generator
 This module takes the raw sentence, dialog state and the policy made by the system as input and generates a natural language sentence. Generally speaking rule-based, template-based and sequence mothods are used in this module.
 
