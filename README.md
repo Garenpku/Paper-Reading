@@ -16,6 +16,8 @@ This part takes annotated utterance from NLU module as input and generate severa
 
 Sometimes people combine this module and NLU together to map ASR hypotheses directly to state distributions. This can avoid the error caused by imperfectness of NLU module.
 
+[Rule-Based Belief Tracker](https://www.aclweb.org/anthology/W13-4067)
+
 [Neural Belief Tracker](https://github.com/Garenpku/Paper-Reading/blob/master/Neural%20Belief%20Tracker.pdf)
 
 [Word-Based Dialog State Tracker with RNN](https://github.com/Garenpku/Paper-Reading/blob/master/Word-Based%20DST%20with%20RNN.pdf)
