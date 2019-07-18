@@ -23,6 +23,8 @@ Sometimes people combine this module and NLU together to map ASR hypotheses dire
 ## Natural Language Generator
 This module takes the raw sentence, dialog state and the policy made by the system as input and generates a natural language sentence. Generally speaking rule-based, template-based and neural-based mothods are used in this module.
 
+[Semantically Conditioned LSTM for NLG](https://github.com/Garenpku/Paper-Reading/blob/master/Semantically%20Conditioned%20LSTM%20for%20NLG.pdf)
+
 # Datasets
 
 [Ubuntu Dialog Corpus](https://arxiv.org/abs/1506.08909)  This corpus is collected from Ubuntu chat logs. Its topics are mostly about computer technology issues, which contains lots of terms, parameters and domain-specific actions. Alhough UDC contains massive data, it is a highly noisy dataset. Several papers using this dataset utilized a handcrafted term set and action set, to cope with the property of domain-specific.
