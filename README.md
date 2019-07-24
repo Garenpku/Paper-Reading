@@ -32,6 +32,10 @@ This module takes the raw sentence, dialog state and the policy made by the syst
 
 [Template-Based NLG](https://github.com/Garenpku/Paper-Reading/blob/master/Template-Based%20NLG.pdf)
 
+### Knowledge-based Generation
+
+[Usage of WordNet in Natural Language Generation](https://www.aclweb.org/anthology/W98-0718) 
+
 # Datasets
 
 [Ubuntu Dialog Corpus](https://arxiv.org/abs/1506.08909)  This corpus is collected from Ubuntu chat logs. Its topics are mostly about computer technology issues, which contains lots of terms, parameters and domain-specific actions. Alhough UDC contains massive data, it is a highly noisy dataset. Several papers using this dataset utilized a handcrafted term set and action set, to cope with the property of domain-specific.
